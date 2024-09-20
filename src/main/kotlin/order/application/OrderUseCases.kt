@@ -53,6 +53,7 @@ class OrderFetchSingleUseCase(private val orderRepository: OrderRepository) {
     }
 }
 
+@UseCase
 class OrderFetchAllUseCase(private val orderRepository: OrderRepository) {
 
     fun execute(): MutableList<Order> {
